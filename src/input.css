@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@100;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Lora", serif;
+  /* font-family: 'Roboto', sans-serif; */
+  --border: #111111;
+  --bg: #111111;
+  --color: #111111;
+  --text: #ffffff;
+}
+
+.container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 1rem;
+  font-size: 27px;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--bg);
+  color: var(--text);
+  border: solid 1px var(--border);
+  border-radius: 5px;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: inline-block;
+}
+
+.btn-outline {
+  --border: var(--color);
+  --bg: transparent;
+  --text: var(--color);
+}
+
+.btn-contained {
+  --border: var(--color);
+  --bg: #111111;
+  --text: #ffffff;
+}
+
+.btn-primary {
+  --color: #111111;
+}
+
+.btn-white {
+  --color: #ffffff;
+}
+
+.btn-p1 {
+  padding: 0.3rem;
+}
+
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.title-line {
+}
+
+.title-line::after {
+  content: "";
+  background: #000000;
+  width: 100%;
+  display: block;
+  height: 3px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+}
+
+.title-line--light::after {
+  background: #ffffff;
+}
+
+.section-title {
+  font-size: 50px;
+}
+
+.section-subtitle {
+  font-size: 41px;
+}
+
+.text {
+  font-size: 25px;
+}
