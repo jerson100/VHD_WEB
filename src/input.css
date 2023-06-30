@@ -26,16 +26,18 @@ body {
   padding: 0.5rem 1rem;
   font-size: 27px;
   border-radius: 0.25rem;
+  min-width: 186px;
   font-weight: 600;
   cursor: pointer;
   background-color: var(--bg);
   color: var(--text);
   border: solid 1px var(--border);
   border-radius: 5px;
-  padding-left: 1.1rem;
-  padding-right: 1.1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
+  text-align: center;
   display: inline-block;
 }
 
@@ -81,6 +83,16 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0.5rem;
+}
+
+.title-line--sm::after {
+  width: 30%;
+}
+.title-line--md::after {
+  width: 50%;
+}
+.title-line--lg::after {
+  width: 80%;
 }
 
 .title-line--light::after {

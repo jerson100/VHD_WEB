@@ -6,15 +6,12 @@
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body class="flex flex-col min-h-screen">
-    <!--
-        Header
-    -->
-    <header class="bg-white-150 shadow-custom fixed left-0 top-0 w-full">
+    <header class="bg-white-150 shadow-custom fixed left-0 top-0 w-full z-20">
       <div class="flex flex-col">
         <div class="border-gray-50 border-b-[1px]">
           <div class="container flex justify-end">
-            <div class="flex">
-              <ul class="flex gap-8 pr-12 py-2">
+            <div class="flex items-center">
+              <ul class="flex gap-8 pr-12">
                 <li>
                   <svg
                     class="w-[27px] h-[27px]"
@@ -241,7 +238,7 @@
       <div class="container">
         <div class="flex flex-col gap-12 items-center max-w-7xl mx-auto">
           <h1
-            class="text-white-150 text-[100px] text-center font-bold title-line title-line--light"
+            class="text-white-150 text-[100px] text-center font-bold title-line title-line--light title-line--sm"
           >
             DESDE EL INICIO HASTA EL FINAL, LA ELECCIÓN CORRECTA
           </h1>
@@ -334,30 +331,139 @@
           </div>
         </div>
       </section>
-    </main>
-    <section class="bg-gray-950 section">
-      <div class="container">
-        <div
-          class="flex flex-col lg:flex-row gap-4 lg:justify-between items-center"
-        >
-          <div class="flex flex-col gap-8 items-start">
-            <h1
-              class="section-title font-bold inline-block text-white-150 title-line title-line--light"
-            >
-              Contáctanos
+      <section class="section bg-[#F2F2F2]">
+        <div class="flex flex-col lg:flex-row">
+          <div class="bg-black flex-shrink-0 w-1/2"></div>
+          <div
+            class="p-36 flex items-start flex-col gap-12 w-full max-w-[750px]"
+          >
+            <h1 class="section-title title-line title-line--lg font-bold">
+              Nosotros
             </h1>
-            <p class="text-white-150 max-w-xl text">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem.
+            <p class="text text-text-primary font-roboto">
+              Somos una compañía peruana nacida el año 2006 con el propósito de
+              atender el mercado veterinario y de aditivos alimenticios para la
+              industria pecuaria.
             </p>
+            <a href="#" class="btn">Ver más</a>
           </div>
-          <div class="w-[640px] h-[620px] bg-white-150 flex-shrink-0"></div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="section bg-white-150">
+        <div class="container">
+          <div class="flex flex-col gap-24 items-center">
+            <h1
+              class="section-title title-line title-line--lg text-text-primary"
+            >
+              Nuestros <span class="font-bold">Clientes</span>
+            </h1>
+            <div
+              class="relative w-full grid md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8 [&>*]:h-52 [&>*]:bg-black before:h-full before:w-[100px] before:content-[''] before:absolute before:left-0 before:top-0 before:bg-gradient-to-r before:from-[#FFFFFF] before:to-[transparent]"
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-gray-950 section">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row gap-4 lg:justify-between items-center"
+          >
+            <div class="flex flex-col gap-8 items-start">
+              <h1
+                class="section-title font-bold inline-block text-white-150 title-line title-line--light title-line--lg"
+              >
+                Contáctanos
+              </h1>
+              <p class="text-white-150 max-w-xl text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem.
+              </p>
+            </div>
+            <div
+              class="w-[640px] h-[620px] bg-white-150 flex-shrink-0 shadow-custom"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="section bg-white-150">
+        <div class="container">
+          <div class="flex flex-col gap-8">
+            <h1 class="section-title text-text-primary font-bold">
+              Últimas noticias
+            </h1>
+            <div class="flex flex-col lg:flex-row gap-4 md:gap-16">
+              <div class="flex flex-col w-[60%] gap-8">
+                <div class="w-full h-[500px] bg-black"></div>
+                <div
+                  class="grid grid-cols-3 [&>*]:h-[157px] gap-8 [&>*]:bg-black"
+                >
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="flex flex-col flex-shrink-0">
+                <div
+                  class="after:content-[''] after:bg-[#707070] after:w-[calc(100%-2.5rem)] after:ml-auto after:h-[1px] after:mt-8 after:mb-8 after:block"
+                >
+                  <div
+                    class="pl-10 pr-10 pt-10 pb-14 bg-celeste flex flex-col gap-2"
+                  >
+                    <p
+                      class="text-[25px] text-green-150 font-roboto font-light"
+                    >
+                      20 de mayo de 2023
+                    </p>
+                    <p class="text-text-secondary text font-semibold">
+                      Lorem ipsum dolor sit amet consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="after:content-[''] after:bg-[#707070] after:w-[calc(100%-2.5rem)] after:ml-auto after:h-[1px] after:mt-8 after:mb-8 after:block"
+                >
+                  <div class="pl-10 pr-10 pt-10 pb-14 flex flex-col gap-2">
+                    <p
+                      class="text-[25px] text-green-150 font-roboto font-light"
+                    >
+                      20 de mayo de 2023
+                    </p>
+                    <p class="text-text-secondary text font-semibold">
+                      Lorem ipsum dolor sit amet consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="after:content-[''] after:bg-[#707070] after:w-[calc(100%-2.5rem)] after:ml-auto after:h-[1px] after:mt-8 after:mb-8 after:block"
+                >
+                  <div class="pl-10 pr-10 pt-10 pb-14 flex flex-col gap-2">
+                    <p
+                      class="text-[25px] text-green-150 font-roboto font-light"
+                    >
+                      20 de mayo de 2023
+                    </p>
+                    <p class="text-text-secondary text font-semibold">
+                      Lorem ipsum dolor sit amet consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <a href="#" class="btn mt-16">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="bg-black mt-auto">
       <div class="py-10 flex-col flex gap-16 container">
         <div class="grid grid-cols-3">
