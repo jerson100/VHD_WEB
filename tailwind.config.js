@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        fluid: "repeat(auto-fit, minmax(420px, 1fr))",
+      },
       fontFamily: {
         roboto: ["Roboto", "Arial", "sans-serif"],
         lora: ["Lora", "Times New Roman", "serif"],
@@ -21,6 +24,7 @@ module.exports = {
         "gray-150": "#00000029",
         "gray-200": "#D2D2D2",
         "gray-250": "#B3B3B3",
+        "green-10": "#CCEBD1",
         "green-50": "#57D163",
         "green-100": "#23B33A",
         "green-150": "#009A17",

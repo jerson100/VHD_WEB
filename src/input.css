@@ -46,6 +46,10 @@ body {
 
 .btn--sm {
   font-size: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .btn-outline {
@@ -101,6 +105,9 @@ body {
 .title-line--lg::after {
   width: 80%;
 }
+.title-line--xl::after {
+  width: 94%;
+}
 
 .title-line--light::after {
   background: #ffffff;
@@ -108,6 +115,7 @@ body {
 
 .section-title {
   font-size: 50px;
+  line-height: 58px;
 }
 
 .section-subtitle {
@@ -116,6 +124,8 @@ body {
 
 .text {
   font-size: 25px;
+  line-height: 35px;
+  font-family: "Roboto", sans-serif;
 }
 .input {
   padding: 8px 1rem;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nuestros Productos</title>
+    <title>VHD | Gracias por contactarnos</title>
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
@@ -213,10 +213,10 @@
                 class="flex gap-8 flex-wrap text-text-primary items-center text-[25px]"
               >
                 <li>
-                  <a href="#">INICIO</a>
+                  <a href="./index.html">INICIO</a>
                 </li>
                 <li>
-                  <a href="#">PRODUCTOS</a>
+                  <a href="./products.html">PRODUCTOS</a>
                 </li>
                 <li>
                   <a href="#">MARCAS</a>
@@ -233,87 +233,37 @@
         </div>
       </div>
     </header>
-    <div class="bg-black min-h-[480px] flex mt-[155px] items-center">
-      <div class="container h-full">
-        <div class="flex justify-center items-center py-10 h-full">
-          <h1
-            class="font-bold text-[100px] title-line title-line--ligh title-line--lg text-white-150"
-          >
-            NUESTROS PRODUCTOS
-          </h1>
-        </div>
-      </div>
-    </div>
     <main>
-      <div class="bg-white-150 section">
-        <div class="container">
-          <div class="flex justify-between flex-col lg:flex-row gap-8">
-            <div class="flex gap-4">
-              <label
-                for="typeProduct"
-                class="text-[25px] text-text-nav font-bold"
-                >Mostrar:</label
-              >
-              <select
-                name="typeProduct"
-                id="typeProduct"
-                class="min-w-[220px] text-text-primary input text"
-              >
-                <option value="0">Todos</option>
-                <option value="1">Antibióticos</option>
-                <option value="2">Promotores de Crecimiento</option>
-                <option value="3">Cáscara del Huevo</option>
-                <option value="4">Control de larvas de moscas</option>
-                <option value="5">Control de moscas adultas</option>
-                <option value="6">Hepato protector</option>
-                <option value="7">Soporte digestivo</option>
-              </select>
-            </div>
+      <div
+        class="bg-black items-center flex mt-[155px] min-h-[calc(100vh-155px)] p-8 justify-center"
+      >
+        <div class="container text-white-150 flex justify-center">
+          <div class="flex flex-col gap-20 items-center max-w-xl">
             <div
-              class="w-full max-w-[600px] full text border border-[#c5c5c5] flex items-center"
-              tabindex="0"
+              class="flex flex-col gap-4 mx-auto items-center [&>button]:min-w-[260px]"
             >
-              <input
-                type="text"
-                class="w-full border-none outline-none py-2 pl-[1.1rem] mr-4 text-[#707070]"
-                placeholder="Buscar..."
-                name="search"
-              />
-              <div class="w-4 h-4 bg-black mr-[1.1rem]"></div>
+              <h1 class="text-[50px] text-center">
+                <span class="font-bold text-[60px] block">¡GRACIAS </span>
+                POR CONTACTARNOS!
+              </h1>
+              <p class="text-[20px] font-roboto font-light text-center mb-11">
+                Nos comunicaremos contigo a la brevedad.
+              </p>
+              <button class="btn btn-outline btn-white btn--sm">
+                Volver al inicio
+              </button>
             </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="bg-white-150 section">
-          <div class="container">
-            <div
-              class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 justify-center"
-            >
-              <article class="shadow-custom">
-                <!-- <img src="" alt=""> -->
-                <div class="bg-black w-[420px] h-[336px]"></div>
-                <div class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1]">
-                  <h1
-                    class="text-[30px] font-bold mb-4 flex items-center gap-2"
-                  >
-                    Aromax
-                    <div class="flex gap-4">
-                      <span class="w-4 h-4 bg-black"></span>
-                    </div>
-                  </h1>
-                  <div class="flex justify-center">
-                    <a href="#" class="btn btn--sm">Más información</a>
-                  </div>
-                </div>
-              </article>
+            <div class="flex flex-col gap-4">
+              <p class="text-[20px] font-normal text-center">
+                También puedes seguirnos en nuestras redes sociales:
+              </p>
             </div>
           </div>
         </div>
       </div>
     </main>
     <footer class="bg-black mt-auto">
-      <div class="py-10 flex-col flex gap-16 container">
+      <div class="py-20 flex-col flex gap-16 container">
         <div class="grid grid-cols-3">
           <div>
             <img
@@ -338,7 +288,17 @@
               <span>info@vhdperu.com</span>
             </li>
           </ul>
-          <div></div>
+          <div class="flex flex-col gap-4 items-end">
+            <span class="text-white-150 text-[20px]"
+              >Nuestros Proveedores son:</span
+            >
+            <ul class="flex gap-4">
+              <li class="w-[56px] h-[36px] bg-white"></li>
+              <li class="w-[56px] h-[36px] bg-white"></li>
+              <li class="w-[56px] h-[36px] bg-white"></li>
+              <li class="w-[56px] h-[36px] bg-white"></li>
+            </ul>
+          </div>
         </div>
         <div class="grid grid-cols-3">
           <span class="text-white-150 text-[17px]"> © 2023 </span>
@@ -354,6 +314,7 @@
                 viewBox="0 0 44.391 44.123"
               >
                 <path
+                  class="fill-white-150"
                   id="Icon_awesome-facebook-2"
                   data-name="Icon awesome-facebook"
                   d="M44.954,22.758A22.2,22.2,0,1,0,19.29,44.685V29.174H13.652V22.758H19.29v-4.89c0-5.562,3.311-8.635,8.383-8.635a34.159,34.159,0,0,1,4.969.433v5.459h-2.8c-2.757,0-3.617,1.711-3.617,3.466v4.166h6.156L31.4,29.174H26.226V44.685A22.2,22.2,0,0,0,44.954,22.758Z"
@@ -373,6 +334,7 @@
                 viewBox="0 0 44 44"
               >
                 <path
+                  class="fill-white-150"
                   id="Sustracción_1"
                   data-name="Sustracción 1"
                   d="M22,44A22,22,0,0,1,6.444,6.444,22,22,0,1,1,37.556,37.556,21.857,21.857,0,0,1,22,44Zm5.274-21.767c2.907,0,2.907,2.755,2.907,4.767v8.764h5.578l.006-9.889c0-4.448-.811-8.565-6.7-8.565a5.9,5.9,0,0,0-5.289,2.907H23.7V17.761H18.337v18h5.584V26.849C23.921,24.566,24.319,22.233,27.273,22.233ZM9.245,17.761v18h5.59v-18ZM12.037,8.8a3.253,3.253,0,1,0,3.237,3.237A3.241,3.241,0,0,0,12.037,8.8Z"

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuestros Productos</title>
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
@@ -232,146 +233,411 @@
         </div>
       </div>
     </header>
-    <div
-      class="bg-black items-center flex mt-[155px] min-h-[calc(100vh-155px)] p-8"
-    >
-      <div class="container">
-        <div class="flex flex-col gap-12 items-center max-w-7xl mx-auto">
+    <div class="bg-black min-h-[480px] flex mt-[155px] items-center">
+      <div class="container h-full">
+        <div class="flex justify-center items-center py-10 h-full">
           <h1
-            class="text-white-150 text-[100px] text-center font-bold title-line title-line--light title-line--sm"
+            class="font-bold text-[100px] title-line title-line--light title-line--lg text-white-150"
           >
-            SALUD Y NUTRICIÓN ANIMAL A SU SERVICIO
+            NUESTROS PRODUCTOS
           </h1>
-          <ul
-            class="flex flex-wrap gap-4 text-[30px] text-white-150 justify-center lg:max-w-[97%] lg:mx-auto"
-          >
-            <li>
-              <a>PROMOTORES DE CRECIEMIENTO</a>
-            </li>
-            <li>-</li>
-            <li>
-              <a>CONTROL DE MOSCAS</a>
-            </li>
-            <li>-</li>
-            <li>
-              <a>ANTIBIÓTICOS SUPLEMENTOS NUTRICIONALES</a>
-            </li>
-            <li>-</li>
-            <li>
-              <a>DESDE EL INICIO HASTA EL FINAL</a>
-            </li>
-            <li>-</li>
-            <li>
-              <a>PRODUCTOS HERBALES</a>
-            </li>
-          </ul>
-          <a href="./products.html" class="btn btn-outline btn-white">
-            Conoce nuestros productos
-          </a>
         </div>
       </div>
     </div>
     <main>
-      <section class="section bg-white-150">
+      <div class="bg-white-150 section">
         <div class="container">
-          <div class="flex flex-col gap-24">
-            <h1
-              class="section-title title-line text-center max-w-[500px] mx-auto"
-            >
-              Nuestros productos <span class="font-bold"> más vendidos </span>
-            </h1>
-            <ul class="flex gap-16">
-              <li class="shadow-custom flex">
-                <article class="flex gap-8 items-center p-8">
-                  <div class="flex flex-col items-start gap-8">
-                    <h1 class="text-text-primary font-bold section-subtitle">
-                      Ganaclor 20WSP
-                    </h1>
-                    <p
-                      class="text text-text-secondary line-clamp-2 font-roboto"
-                    >
-                      Antibiótico soluble al 20% en base a clortetraciclina...
-                    </p>
-                    <a href="./product.html" class="btn btn-primary">
-                      Más información
-                    </a>
-                  </div>
-                  <div class="w-[250px] h-[322px]">
-                    <img
-                      src="./public/img/fondo.jpg"
-                      alt=""
-                      example
-                      class="w-full h-full object-cover object-center"
-                    />
-                  </div>
-                </article>
-              </li>
-              <li class="shadow-custom flex">
-                <article class="flex gap-8 items-center p-8">
-                  <div class="flex flex-col items-start gap-8">
-                    <h1 class="text-text-primary font-bold section-subtitle">
-                      GARRISON 1 GB
-                    </h1>
-                    <p
-                      class="text text-text-secondary line-clamp-2 font-roboto"
-                    >
-                      Producto para el control de moscas adultas en forma...
-                    </p>
-                    <a href="./product.html" class="btn btn-primary">
-                      Más información
-                    </a>
-                  </div>
-                  <div class="w-[250px] h-[322px]">
-                    <img
-                      src="./public/img/fondo.jpg"
-                      alt=""
-                      example
-                      class="w-full h-full object-cover object-center"
-                    />
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="section bg-[#F2F2F2]">
-        <div class="flex flex-col lg:flex-row">
-          <div class="bg-black flex-shrink-0 w-1/2"></div>
-          <div
-            class="p-36 flex items-start flex-col gap-12 w-full max-w-[750px]"
-          >
-            <h1 class="section-title title-line title-line--lg font-bold">
-              Nosotros
-            </h1>
-            <p class="text text-text-primary font-roboto">
-              Somos una compañía peruana nacida el año 2006 con el propósito de
-              atender el mercado veterinario y de aditivos alimenticios para la
-              industria pecuaria.
-            </p>
-            <a href="#" class="btn">Ver más</a>
-          </div>
-        </div>
-      </section>
-      <section class="section bg-white-150">
-        <div class="container">
-          <div class="flex flex-col gap-24 items-center">
-            <h1
-              class="section-title title-line title-line--lg text-text-primary"
-            >
-              Nuestros <span class="font-bold">Clientes</span>
-            </h1>
+          <div class="flex justify-between flex-col lg:flex-row gap-8">
+            <div class="flex">
+              <label
+                for="typeProduct"
+                class="text-[25px] text-text-nav font-bold w-[120px]"
+                >Mostrar:</label
+              >
+              <select
+                name="typeProduct"
+                id="typeProduct"
+                class="min-w-[220px] text-text-primary input text"
+              >
+                <option value="0">Todos</option>
+                <option value="1">Antibióticos</option>
+                <option value="2">Promotores de Crecimiento</option>
+                <option value="3">Cáscara del Huevo</option>
+                <option value="4">Control de larvas de moscas</option>
+                <option value="5">Control de moscas adultas</option>
+                <option value="6">Hepato protector</option>
+                <option value="7">Soporte digestivo</option>
+              </select>
+            </div>
             <div
-              class="relative w-full grid md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8 [&>*]:h-52 [&>*]:bg-black before:h-full before:w-[100px] before:content-[''] before:absolute before:left-0 before:top-0 before:bg-gradient-to-r before:from-[#FFFFFF] before:to-[transparent]"
+              class="w-full max-w-[600px] full text border border-[#c5c5c5] flex items-center"
+              tabindex="0"
             >
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+              <input
+                type="text"
+                class="w-full border-none outline-none py-2 pl-[1.1rem] mr-4 text-[#707070]"
+                placeholder="Buscar..."
+                name="search"
+              />
+              <div class="w-4 h-4 bg-black mr-[1.1rem]"></div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="bg-white-150 section">
+        <div class="container">
+          <div
+            class="grid grid-cols-3 gap-4 lg:gap-8 justify-center ml-[120px] mb-4"
+          >
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Aromax
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Bacflora BR
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Dixxolin
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Fly Shield
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  GANACLOR
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Ganaclor 20WSP
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  GARRISON 1 GB
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  GARRISON 10 WG
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Metavolin Herbal
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Ore-10G
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Ovostrong
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  PleuroMax 10% Premix X 10KG
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Sorbmax
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Turbo Tox
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Aromax Dry
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="shadow-custom flex flex-col">
+              <!-- <img src="" alt=""> -->
+              <div class="bg-black w-full h-[336px]"></div>
+              <div
+                class="py-8 px-4 flex items-center flex-col bg-[#F1F1F1] flex-grow"
+              >
+                <h1
+                  class="text-[30px] font-bold mb-4 flex items-center gap-2 flex-grow"
+                >
+                  Diponox 50
+                  <div class="flex gap-4">
+                    <span class="w-4 h-4 bg-black"></span>
+                  </div>
+                </h1>
+                <div class="flex justify-center">
+                  <a href="./product.html" class="btn btn--sm"
+                    >Más información</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="flex justify-center p-4">
+            <div
+              class="flex gap-4 [&>*]:min-w-min [&>*]:w-[40px] [&>*]:h-[40px] [&>*]:items-center [&>*]:justify-center [&>*]:p-0"
+            >
+              <button class="btn btn--sm">1</button
+              ><button class="btn btn-outline btn--sm">2</button
+              ><button class="btn btn-outline btn--sm">3</button
+              ><button class="btn btn-outline btn--sm">></button>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="bg-gray-950 section">
         <div class="container">
           <div
@@ -394,76 +660,6 @@
             <div
               class="w-[640px] h-[620px] bg-white-150 flex-shrink-0 shadow-custom"
             ></div>
-          </div>
-        </div>
-      </section>
-      <section class="section bg-white-150">
-        <div class="container">
-          <div class="flex flex-col gap-8">
-            <h1 class="section-title text-text-primary font-bold">
-              Últimas noticias
-            </h1>
-            <div class="flex flex-col lg:flex-row gap-4 md:gap-16">
-              <div class="flex flex-col w-[60%] gap-8">
-                <div class="w-full h-[500px] bg-black"></div>
-                <div
-                  class="grid grid-cols-3 [&>*]:h-[157px] gap-8 [&>*]:bg-black"
-                >
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
-              <div class="flex flex-col flex-shrink-0">
-                <div
-                  class="after:content-[''] after:bg-[#707070] after:w-[calc(100%-2.5rem)] after:ml-auto after:h-[1px] after:mt-8 after:mb-8 after:block"
-                >
-                  <div
-                    class="pl-10 pr-10 pt-10 pb-14 bg-celeste flex flex-col gap-2"
-                  >
-                    <p
-                      class="text-[25px] text-green-150 font-roboto font-light"
-                    >
-                      20 de mayo de 2023
-                    </p>
-                    <p class="text-text-secondary text font-semibold">
-                      Lorem ipsum dolor sit amet consectetuer adipiscing elit.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="after:content-[''] after:bg-[#707070] after:w-[calc(100%-2.5rem)] after:ml-auto after:h-[1px] after:mt-8 after:mb-8 after:block"
-                >
-                  <div class="pl-10 pr-10 pt-10 pb-14 flex flex-col gap-2">
-                    <p
-                      class="text-[25px] text-green-150 font-roboto font-light"
-                    >
-                      20 de mayo de 2023
-                    </p>
-                    <p class="text-text-secondary text font-semibold">
-                      Lorem ipsum dolor sit amet consectetuer adipiscing elit.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="after:content-[''] after:bg-[#707070] after:w-[calc(100%-2.5rem)] after:ml-auto after:h-[1px] after:mt-8 after:mb-8 after:block"
-                >
-                  <div class="pl-10 pr-10 pt-10 pb-14 flex flex-col gap-2">
-                    <p
-                      class="text-[25px] text-green-150 font-roboto font-light"
-                    >
-                      20 de mayo de 2023
-                    </p>
-                    <p class="text-text-secondary text font-semibold">
-                      Lorem ipsum dolor sit amet consectetuer adipiscing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex justify-center">
-              <a href="./lastArticles.html" class="btn mt-16">Ver más</a>
-            </div>
           </div>
         </div>
       </section>
