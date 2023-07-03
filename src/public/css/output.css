@@ -657,10 +657,6 @@ video {
   margin-right: 1.1rem;
 }
 
-.mt-16{
-  margin-top: 4rem;
-}
-
 .mt-\[155px\]{
   margin-top: 155px;
 }
@@ -1657,7 +1653,7 @@ body {
 }
 
 .section-title {
-  font-size: 22px;
+  font-size: 23px;
   line-height: 35px;
   @media screen and (min-width: 1500px) {
     font-size: 50px;
@@ -1667,7 +1663,7 @@ body {
 }
 
 .section-subtitle {
-  font-size: 25px;
+  font-size: 20px;
   @media screen and (min-width: 1500px) {
     font-size: 41px;
   }
@@ -1936,16 +1932,16 @@ body {
     gap: 3rem;
   }
 
+  .desktop\:gap-16{
+    gap: 4rem;
+  }
+
   .desktop\:gap-24{
     gap: 6rem;
   }
 
   .desktop\:gap-8{
     gap: 2rem;
-  }
-
-  .desktop\:gap-16{
-    gap: 4rem;
   }
 
   .desktop\:p-36{
@@ -1989,6 +1985,14 @@ body {
     text-align: left;
   }
 
+  .desktop\:text-\[17px\]{
+    font-size: 17px;
+  }
+
+  .desktop\:text-\[20px\]{
+    font-size: 20px;
+  }
+
   .desktop\:text-\[22px\]{
     font-size: 22px;
   }
@@ -1999,14 +2003,6 @@ body {
 
   .desktop\:text-\[30px\]{
     font-size: 30px;
-  }
-
-  .desktop\:text-\[20px\]{
-    font-size: 20px;
-  }
-
-  .desktop\:text-\[17px\]{
-    font-size: 17px;
   }
 
   .desktop\:after\:mb-8::after{
