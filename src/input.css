@@ -27,7 +27,7 @@ body {
 .btn {
   font-family: "Roboto", sans-serif;
   padding: 0.5rem 1rem;
-  font-size: 27px;
+  font-size: 16px;
   border-radius: 0.25rem;
   min-width: 186px;
   font-weight: 600;
@@ -42,6 +42,9 @@ body {
   padding-bottom: 0.7rem;
   text-align: center;
   display: inline-block;
+  @media screen and (min-width: 1500px) {
+    font-size: 27px;
+  }
 }
 
 .btn--sm {
@@ -77,8 +80,12 @@ body {
 }
 
 .section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  @media screen and (min-width: 1500px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 .title-line {
@@ -122,18 +129,29 @@ body {
 }
 
 .section-title {
-  font-size: 50px;
-  line-height: 58px;
+  font-size: 22px;
+  line-height: 35px;
+  @media screen and (min-width: 1500px) {
+    font-size: 50px;
+    line-height: 58px;
+  }
 }
 
 .section-subtitle {
-  font-size: 41px;
+  font-size: 25px;
+  @media screen and (min-width: 1500px) {
+    font-size: 41px;
+  }
 }
 
 .text {
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 16px;
+  line-height: 1.5;
   font-family: "Roboto", sans-serif;
+  @media screen and (min-width: 1500px) {
+    font-size: 25px;
+    line-height: 35px;
+  }
 }
 .input {
   padding: 8px 1rem;
@@ -154,4 +172,41 @@ body {
 ::-webkit-scrollbar {
   width: 20px;
   /* background-color: #000000c7; */
+}
+
+.hamburger {
+  & > div {
+    transform-origin: left;
+    transition: transform 250ms linear, opacity 250ms linear;
+  }
+  &.active {
+    & > div:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    & > div:nth-child(2) {
+      opacity: 0;
+    }
+    & > div:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+body {
+  --w-header: 106px;
+  margin-top: var(--w-header);
+  @media screen and (min-width: 1500px) {
+    --w-header: 155px;
+  }
+}
+
+.screen-top {
+  min-height: calc(100vh - var(--w-header));
+}
+
+.banner-title {
+  font-size: 26px;
+  @media screen and (min-width: 1500px) {
+    font-size: 100px;
+  }
 }

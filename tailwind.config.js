@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        desktop: "1500px",
+        // => @media (min-width: 1500px) { ... }
+      },
       gridTemplateColumns: {
         fluid: "repeat(auto-fit, minmax(420px, 1fr))",
       },
