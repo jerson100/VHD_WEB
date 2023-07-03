@@ -17,7 +17,7 @@ const handler = () => {
     document.body.style.overflow = "";
   });
   window.addEventListener("resize", (e) => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth >= 1024) {
       hamburger.classList.remove("active");
       navigator.classList.remove("active");
       document.body.style.overflow = "";
