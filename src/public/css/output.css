@@ -1238,6 +1238,18 @@ video {
   background-image: url('/src/public/img/img-24.jpg');
 }
 
+.bg-\[url\(\'public\/img\/img-1\.jpg\'\)\]{
+  background-image: url('public/img/img-1.jpg');
+}
+
+.bg-\[url\(\'\.\/public\/img\/img-1\.jpg\'\)\]{
+  background-image: url('./public/img/img-1.jpg');
+}
+
+.bg-\[url\(\'\/public\/img\/formas-1\.png\'\)\]{
+  background-image: url('/public/img/formas-1.png');
+}
+
 .bg-contain{
   background-size: contain;
 }
