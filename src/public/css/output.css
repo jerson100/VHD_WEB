@@ -1920,6 +1920,10 @@ body {
     flex-direction: row;
   }
 
+  .desktop\:flex-wrap{
+    flex-wrap: wrap;
+  }
+
   .desktop\:items-start{
     align-items: flex-start;
   }
@@ -1942,6 +1946,10 @@ body {
 
   .desktop\:gap-8{
     gap: 2rem;
+  }
+
+  .desktop\:gap-4{
+    gap: 1rem;
   }
 
   .desktop\:p-36{
