@@ -113,6 +113,14 @@ body {
   background: #ffffff;
 }
 
+.title-line--gray::after {
+  background: #d2d2d2;
+}
+
+.title-line--dl::after {
+  margin-left: initial;
+}
+
 .section-title {
   font-size: 50px;
   line-height: 58px;
