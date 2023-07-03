@@ -1653,7 +1653,7 @@ body {
 }
 
 .section-title {
-  font-size: 22px;
+  font-size: 23px;
   line-height: 35px;
   @media screen and (min-width: 1500px) {
     font-size: 50px;
@@ -1663,7 +1663,7 @@ body {
 }
 
 .section-subtitle {
-  font-size: 25px;
+  font-size: 20px;
   @media screen and (min-width: 1500px) {
     font-size: 41px;
   }
@@ -1920,6 +1920,10 @@ body {
     flex-direction: row;
   }
 
+  .desktop\:flex-wrap{
+    flex-wrap: wrap;
+  }
+
   .desktop\:items-start{
     align-items: flex-start;
   }
@@ -1938,6 +1942,10 @@ body {
 
   .desktop\:gap-24{
     gap: 6rem;
+  }
+
+  .desktop\:gap-4{
+    gap: 1rem;
   }
 
   .desktop\:gap-8{

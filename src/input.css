@@ -132,7 +132,7 @@ body {
 }
 
 .section-title {
-  font-size: 22px;
+  font-size: 23px;
   line-height: 35px;
   @media screen and (min-width: 1500px) {
     font-size: 50px;
@@ -141,7 +141,7 @@ body {
 }
 
 .section-subtitle {
-  font-size: 25px;
+  font-size: 20px;
   @media screen and (min-width: 1500px) {
     font-size: 41px;
   }
