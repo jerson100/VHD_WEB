@@ -1944,12 +1944,12 @@ body {
     gap: 6rem;
   }
 
-  .desktop\:gap-8{
-    gap: 2rem;
-  }
-
   .desktop\:gap-4{
     gap: 1rem;
+  }
+
+  .desktop\:gap-8{
+    gap: 2rem;
   }
 
   .desktop\:p-36{
